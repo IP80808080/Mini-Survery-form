@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="header">
+                <h1 id="title">Mini Survey</h1>
+            <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+                </div>
+            <form method="post" action="#" id="survey-form">
+
+                <div class="group">
+                    <label for="first-name" id="name-label">Name: <br>
+                        <input id="name" class="control" name="first-name" type="text" placeholder="Enter you Name" required /></label>
+                </div>
+
+                <div class="group">
+                <label for="email" id="email-label">Email: <br>
+                    <input id="email" class="control" name="email" type="email" placeholder="Enter you Email" required /></label>
+                </div>
+
+                <div class="group">
+                <label for="age" id="number-label">Age (optional): <br>
+                    <input id="number" type="number" class="control" name="age" min="10" max="100" placeholder="Enter you Age"/></label>
+                </div>
+
+                <div class="group">
+                    <p>Which option best describes your current role?</p>
+                    <select id="dropdown" name="describes" required class="control">
+                        <option value="">Select Current Role</option>
+                        <option value="1">Student</option>
+                        <option value="2">Full Time Job</option>
+                        <option value="3">Full Time Learner</option>
+                        <option value="4">Prefer not to Say</option>
+                        <option value="5">Other</option>
+                    </select>
+                
+                </div>
+
+                <div class="group">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                    <label for="Definetly"><input id="Definetly" type="radio" name="urecommend" class="inputradio" value="Definetly"/>
+                        Definetly</label><br>
+                    <label for="Maybe"><input id="Maybe" type="radio" name="urecommend" class="inputradio" value="Maybe"/> Maybe</label><br>
+                    <label for="Not sure"><input id="Not sure" type="radio" name="urecommend" class="inputradio" value="Not sure"/> Not
+                        sure</label>
+                </div>
+
+                <div class="group">
+                <p>What is your favorite feature of freeCodeCamp?</p>
+                    <select id="feature" name="feature" class="control" required>
+                        <option value="">Select an option</option>
+                        <option value="Challeges">Challeges</option>
+                        <option value="Projects">Projects</option>
+                        <option value="Community">Community</option>
+                        <option value="Option Source">Option Source</option>
+                    </select>
+                </div>
+
+                <div class="group">
+                <p>What would you like to see improved? <small class="hintskill"> (Check all that apply) </small></p>
+                    <label for="Front-end Projects"><input id="Front-end Projects" type="checkbox" name="recommend" value="frontend" class="inputcheckbox" />
+                        Front-end Projects</label><br>
+                    <label for="Back-end Projects"><input id="Back-end Projects" type="checkbox" name="recommend" value="backend"  class="inputcheckbox" /> Back-end
+                        Projects</label><br>
+                    <label for="Data Visualization"><input id="Data Visualization" type="checkbox" name="recommend" value="datavs"  class="inputcheckbox" /> Data
+                        Visualization</label><br>
+                
+                <label for="Challenges"><input id="Challenges" type="checkbox" name="recommend" value="challenge"  class="inputcheckbox" />
+                    Challenges</label><br>
+                
+                <label for="Source Community"><input id="Source Community" type="checkbox" name="recommend" value="source community"  class="inputcheckbox" /> Open
+                    Source Community</label><br>
+                
+                <label for="help rooms"><input id="help rooms" type="checkbox" name="recommend" value="help"  class="inputcheckbox" /> Gitter
+                    help rooms</label><br>
+                
+                <label for="Videos"><input id="Videos" type="checkbox" name="recommend" value="video"  class="inputcheckbox" />
+                    Videos</label><br>
+                
+                <label for="City Meetups"><input id="City Meetups" type="checkbox" name="recommend" value="meetups"  class="inputcheckbox" /> City
+                    Meetups</label><br>
+                
+                <label for="Wiki"><input id="Wiki" type="checkbox" name="recommend" value="wiki"  class="inputcheckbox" />
+                    Wiki</label><br>
+                
+                <label for="Forum"><input id="Forum" type="checkbox" name="recommend" value="forum"  class="inputcheckbox" />
+                    Forum</label><br>
+                
+                <label for="Courses"><input id="Courses" type="checkbox" name="recommend" value="addi course"  class="inputcheckbox" /> Additional
+                    Courses</label><br>
+                </div>
+
+                <div class="group">
+                <p>Any comments or suggestions?</p>
+                    <textarea id="comment" name="comment" rows="5" cols="35"
+                        placeholder="Enter your comment here" class="textclass"></textarea>
+                
+                </div>
+                
+                <div class="group">
+                <input type="submit" value="Submit" id="submit" class="submitit"/>
+                
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
